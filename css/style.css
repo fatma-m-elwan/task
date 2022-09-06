@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #3f4e4917;
+}
+div {
+    height: calc(100% / 8);
+    width: 78.31px;
+    background-image: url(../images/features-02.jpg);
+    background-size: cover;
+    /* border-radius: 30px 60px; */
+    border-radius: 50%;
+
+    /* animation-iteration-count: infinite;
+    animation-direction:alternate-reverse ; */
+}
+.right {
+    animation-name: change;
+    animation-duration: 2s; 
+}
+.left {
+    margin-left: auto;
+    animation-name: change-reverse;
+    animation-duration: 2s;
+}
+@keyframes change {
+    0%{margin-left: 0px;}
+    100%{margin-left: auto;}
+}
+
+@keyframes change-reverse {
+    0%{margin-left: auto;}
+    100%{margin-left: 0px;} 
+}
+.div1 {
+    animation-delay: 0s;
+}
+.div2 {
+    animation-delay: 2s;
+}
+.div3 {
+    animation-delay: 4s;
+}
+.div4 {
+    animation-delay: 6s;
+}
+.div5 {
+    animation-delay: 8s;
+}
+.div6 {
+    animation-delay: 10s;
+}
+.div7 {
+    animation-delay: 12s;
+}
+.div8 {
+    animation-delay: 14s;
+}
